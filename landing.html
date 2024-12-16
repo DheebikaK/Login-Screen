@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFi Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'defi-dark': '#0A0A0A',
+                        'defi-green': '#00FF88'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-defi-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-defi-green">grid+</div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-defi-green">Home</a>
+                <a href="#" class="hover:text-defi-green">About</a>
+                <a href="#" class="hover:text-defi-green">Blog</a>
+                <a href="#" class="hover:text-defi-green">Beta</a>
+            </div>
+            <button class="bg-transparent border border-defi-green text-defi-green px-6 py-2 rounded-full hover:bg-defi-green hover:text-defi-dark transition-all">
+                Get Started ↗
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-20">
+        <!-- New Badge -->
+        <div class="flex justify-center mb-8">
+            <div class="inline-flex items-center gap-2 bg-opacity-20 bg-defi-green px-4 py-2 rounded-full">
+                <span>Easy Access to DeFi Projects</span>
+                <span class="bg-white text-black px-2 py-0.5 rounded-full text-sm">New!</span>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="text-center max-w-5xl mx-auto">
+            <h1 class="text-7xl font-bold mb-4 leading-tight">
+                Unleash the
+                <br/>
+                Potential
+                <br/>
+                <span class="text-defi-green">DEFI Ecosystems</span>
+            </h1>
+            
+            <p class="text-gray-400 text-xl mb-12">
+                Enable Passive Income for everyone with simplified DeFi Access and Rewards
+            </p>
+
+            <div class="flex justify-center gap-4">
+                <button class="bg-defi-green text-black px-8 py-3 rounded-full hover:bg-opacity-90 transition-all">
+                    Deposit
+                </button>
+                <button class="bg-transparent border border-defi-green text-defi-green px-8 py-3 rounded-full hover:bg-defi-green hover:text-black transition-all">
+                    Deploy
+                </button>
+            </div>
+        </div>
+
+        <!-- Floating Icons -->
+        <div class="relative">
+            <!-- You can add SVG icons or images here positioned absolutely -->
+            <!-- Example of a floating hexagon -->
+            <div class="absolute top-20 left-20 w-16 h-16 bg-gray-800 rounded-xl transform rotate-45 opacity-50"></div>
+            <div class="absolute top-40 right-20 w-16 h-16 bg-gray-800 rounded-xl transform rotate-45 opacity-50"></div>
+        </div>
+    </main>
+</body>
+</html> 
